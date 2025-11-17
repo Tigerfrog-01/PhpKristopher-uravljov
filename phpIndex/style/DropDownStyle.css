@@ -1,5 +1,7 @@
 
-h1{}
+div{
+    width:30%
+}
 header, footer{
 
     font-family: "Rage Italic";
@@ -157,6 +159,14 @@ div#left
 div#right {
     border-right: 2pt solid grey;
     border-left: 2pt solid grey;
+
 }
 
+h2#panelleft
+{
+    text-align: center;
+    width: 10%;
+    font-size: medium;
 
+
+}

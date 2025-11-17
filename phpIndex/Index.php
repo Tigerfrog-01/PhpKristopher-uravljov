@@ -40,7 +40,12 @@ include("nav.php");
 
 <div class="flex-container">
     <div id="left">
-        <h2>Side</h2>
+        <h2 id="panelleft">PHP on skriptimiskeel,
+             mida kasutatakse peamiselt serveripoolsetes
+            lahendustes dünaamiliste
+            veebilehtede loomisel.
+            PHP toetab objektorienteeritud programmeerimist, andmebaasidega suhtlemist ning moodulite kaudu veel paljusid protokolle ja rakendusi
+            .</h2>
         <p></p>
     </div>
 
@@ -59,10 +64,7 @@ include("nav.php");
 
     </div>
 
-    <div id="right">
-        <h2>Side</h2>
-        <p></p>
-    </div>
+
 </div>
 
 

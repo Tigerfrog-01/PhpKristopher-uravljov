@@ -39,32 +39,27 @@ include("nav.php");
 
 
 <div class="flex-container">
-    <div id="left">
-        <h2 id="panelleft">PHP on skriptimiskeel,
-             mida kasutatakse peamiselt serveripoolsetes
-            lahendustes dünaamiliste
-            veebilehtede loomisel.
-            PHP toetab objektorienteeritud programmeerimist, andmebaasidega suhtlemist ning moodulite kaudu veel paljusid protokolle ja rakendusi
-            .</h2>
-        <p></p>
+    <div id="aside"><strong>PHP - </strong>
+        Skriptikeel – skript teeb oma tööd pärast seda, kui toimus mingi sündmus.
+        Orienteeritud programmeerija eesmärkide saavutamiseks (mugavus on tähtsam kui vastavus standarditele).
+        Serveripoolne keel.
+        Platvormist sõltumatu.
+        Saab kasutada nii HTML-i sees (HTML embedded), kui ka eraldiseisvana skriptina.
+    </div>
+    <div>
+        <?php
+        //sisu - laetakse content kaustast
+        if(isset($_GET["leht"])){
+            include('content/'.$_GET["leht"]);
+        } else {
+            include('content/kodu.php');
+        }
+        ?>
     </div>
 
     <div>
-        <main>
-            <section>
-                <?php
-                if(isset($_GET["content/leht"])){
-                    include('content/'.$_GET["leht"]);
-                }else{
-                    include('content/kodu.php');
-                }
-                ?>
-            </section>
-        </main>
-
+        <img src="image/phpPilt.png" alt="PHP pilt">
     </div>
-
-
 </div>
 
 

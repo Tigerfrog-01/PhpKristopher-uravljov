@@ -1,5 +1,6 @@
 
 
+
 header, footer{
 
     font-family: "Rage Italic";
@@ -24,7 +25,7 @@ nav ul {
 }
 nav a:hover { /*link fookuses*/
     background-color: grey;
-
+}
     nav ul li {
         position: relative;
         margin-right: 20px;
@@ -94,7 +95,7 @@ nav a:hover { /*link fookuses*/
         transform: scale(1.1);
         font-size: 30px;
     }
-}
+
 h2{
 
     padding: 5%;
@@ -149,7 +150,7 @@ div.flex-container > div {
     div.flex-container {
         flex-direction: column;
     }
-
+}
 
 div#left
 {
@@ -162,11 +163,9 @@ div#right {
 
 }
 
-h2#panelleft
-{
+h2#panelleft {
     text-align: center;
     width: 10%;
     font-size: medium;
-
-
 }
+

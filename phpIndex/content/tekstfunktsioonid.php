@@ -57,11 +57,16 @@ $asenda = array('----', 'software');
 echo "otsib on ja asendab ".str_replace($otsi, $asenda, $tekst);
 echo "<h2> MÕISTATUS - ARVA ÄRA INGLISMAA LINNANIMI</h2>";
 echo "<br>";
-$linn="";
+$linn="Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch";
+$asendus1 = 'KalapulkOnParim!';
+$otsitav_algus1 = 0;
+$otsitav_pikkus1 = 28;
 
 echo "<ol><li>Linn algab $linn[0] tähega</li> ";
 echo "<li>Tähtede arv kokku: </li>".strlen($linn);
 echo "<li>sõna lõik alates 11 tähest kuni 21 tähest: </li>".substr($linn,10,20);
+echo "<li>Võtab Esimese 16 sõna  ja asendab selle suvalise sõnaga</li>".substr_replace($linn, $asendus1, $otsitav_algus1, $otsitav_pikkus1);
+echo "<li> Linn lõppeb $linn[57] tähega </li>";
 
 echo "<br>"
 ?>
@@ -75,15 +80,22 @@ echo "<br>"
 
 
 <?php
-if(isset($_REQUEST["linn"])) {
-    if ($_REQUEST["linn"] != "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch") {
+echo "<br>";
+if(isset($_REQUEST['linn'])!=""){
+
+    echo "linn;";
+    if($_REQUEST['linn']==$linn){
+        echo "<div id='correct'>";
+        echo $_REQUEST['linn']. " on õige";
+        echo "</div>";
+    } else
+    {
+        echo "<div id='incorrect'>";
+        echo $_REQUEST['linn']." on vale.";
+        echo "</div>";
     }
-    echo $_REQUEST["linn"] . " on õige";
-}else{
-    echo $_REQUEST["linn"]."on vale";
 
 }
-?>
 
 
 

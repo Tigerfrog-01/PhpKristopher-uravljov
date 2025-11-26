@@ -118,13 +118,15 @@ nav li a{
     text-align: center;
     background-color: darkseagreen;
 
+
     border: solid 1px #c3c3c3;
 }
 
 #panel {
-    padding: 50px;
-    display: none;
+    padding: 4px;
+    display:block;
     background-color: rgba(60, 179, 113, 0.5);
+    height:auto;
 
 
 
@@ -167,5 +169,15 @@ h2#panelleft {
     text-align: center;
     width: 10%;
     font-size: medium;
+}
+img#üks
+{
+    border-radius: 50px;
+    max-width: 200px;
+    border-right: 2pt solid black;
+    border-left: 2pt solid black;
+    border-top: 2pt solid black;
+    border-bottom: 2pt solid black;
+
 }
 

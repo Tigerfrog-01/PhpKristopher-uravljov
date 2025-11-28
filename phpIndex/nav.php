@@ -25,14 +25,17 @@
                 <li>
                     <a href="?leht=MatemaatilisedFunktsioonid.php">Matemaatilised funktsioonid</a>
                 </li>
-
+                <li>
+                    <a href="?leht=galery.php">Galery funktsioonid</a>
+                </li>
+                <li>
+                    <a href="content/mobillimalliKonspekt/blankett.php">Mobillimalli Konspekt</a>
+                </li>
 
 
             </ul>
         </li>
-        <li>
-            <a href="?leht=galery.php">Galery funktsioonid</a>
-        </li>
+
 
     </ul>
 </nav>
